@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Sistema de Garantias - Loja de Informática</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>CENTRAL DE GARANTIAS R7 INFORMÁTICA</h1>
+<input type="text" id="search" placeholder="Digite a marca do produto..." onkeyup="buscar()">
+
+<table id="tabelaGarantias">
+  <thead>
+    <tr>
+      <!-- <th>Categoria</th> -->
+      <th>Marcas</th>
+      <th>Modelos</th>
+      <th>Prazo de Garantia</th>
+      <th>Tipo de Garantia</th>
+      <th>Contato / Observações</th>
+      <th>Observações</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Linhas serão geradas automaticamente -->
+  </tbody>
+</table>
+
+
+<!-- Modal -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span id="fecharModal">&times;</span>
+    <h2 id="modalMarca"></h2>
+    <p id="modalModelo"></p>
+    <p id="modalGarantia"></p>
+    <p id="modalTipo"></p>
+    <p id="modalObs"></p>
+    <p id="modalObservacoes"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
