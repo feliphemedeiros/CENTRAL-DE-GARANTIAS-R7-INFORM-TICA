@@ -76,7 +76,7 @@ const produtos = [
 
   //7 DIAS NA LOJA E 1 ANO COM A MARCA
   {marca: "PULSE", modelo: "Caixas de Som",garantia: "7 DIAS NA LOJA E 1 ANO COM A PULSE", tipo: "Fabricante", obs: "GRUPO MULTI - 8 9 8739-2269 - 859 8809-4821",observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-ce - CEP: 60.450 -115"},
-  {marca: "NOTEBOOK MULT ULTRA", modelo: "Notebook",garantia: "7 DIAS NA LOJA E 1 ANO COM A PULSE", tipo: "Fabricante", obs: "GRUPO MULTI - 8 9 8739-2269 - 859 8809-4821",observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-ce - CEP: 60.450 -115"},
+  {marca: "NOTEBOOK MULT ULTRA", modelo: "Notebook",garantia: "7 DIAS NA LOJA E 1 ANO COM A MULTILASER", tipo: "Fabricante", obs: "GRUPO MULTI - 8 9 8739-2269 - 859 8809-4821",observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-ce - CEP: 60.450 -115"},
   {marca: "INTELBRAS", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A INTELBRAS", tipo: "Fabricante", obs: "A2 CONECT - (85)9 8729-5235", observacoes: "Av. Antônio Sales, 284 - Joaquim Távora (Fortaleza), Fortaleza - CE, 60135-100"},
   {marca: "HP", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A HP", tipo: "Fabricante", obs: "WWW.SUPPORT.HP.COM",observacoes:"WWW.SUPPORT.HP.COM"},
   {marca: "EPSON", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A EPSON", tipo: "Fabricante", obs: "LW INFORMÁTICA - (85) 3253-5704", observacoes:  "R. Carlos Ribeiro, 578 - Fátima, Fortaleza - CE, 60040-420"},
@@ -165,3 +165,4 @@ window.addEventListener("click", (event) => {
 
 // Inicializa a tabela
 gerarTabela();
+
