@@ -32,6 +32,7 @@ const produtos = [
   {marca: "YEPP", modelo: "Todos",garantia: "3 meses", tipo: "Loja", obs: "Precisa de Nota Fiscal"},
   {marca: "SMART LIFE", modelo: "Tomadas inteligente",garantia: "3 meses", tipo: "Loja", obs: "Precisa de Nota Fiscal"},
   {marca: "TABLET INFANTIL", modelo: "Todos",garantia: "3 meses", tipo: "Loja", obs: "Precisa de Nota Fiscal"},
+  {marca: "WIFI SMART CAMERA", modelo: "Todos",garantia: "3 meses", tipo: "Loja", obs: "Precisa de Nota Fiscal"},
 
 
   {marca: "MOCHILAS", modelo: "Todos",garantia: "3 meses", tipo: "Loja", obs: "Precisa de Nota Fiscal"},
@@ -165,4 +166,5 @@ window.addEventListener("click", (event) => {
 
 // Inicializa a tabela
 gerarTabela();
+
 
