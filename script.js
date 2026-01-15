@@ -81,7 +81,7 @@ const produtos = [
   {marca: "INTELBRAS", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A INTELBRAS", tipo: "Fabricante", obs: "A2 CONECT - (85)9 8729-5235", observacoes: "Av. Antônio Sales, 284 - Joaquim Távora (Fortaleza), Fortaleza - CE, 60135-100"},
   {marca: "HP", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A HP", tipo: "Fabricante", obs: "WWW.SUPPORT.HP.COM",observacoes:"WWW.SUPPORT.HP.COM"},
   {marca: "EPSON", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A EPSON", tipo: "Fabricante", obs: "LW INFORMÁTICA - (85) 3253-5704", observacoes:  "R. Carlos Ribeiro, 578 - Fátima, Fortaleza - CE, 60040-420"},
-  {marca: "TSHARA", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A TSHARA", tipo: "Fabricante", obs: "UPS SOLUÇÕES - (85) 9 8899-6308",observacoes:"R. Martins Neto, 313 - Antônio Bezerra, Fortaleza - CE, 60360-415"},
+  {marca: "TSHARA", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A TSHARA", tipo: "Fabricante", obs: "SMARTUPS - (85) 9 9249-8737",observacoes:"R. Azevedo Bolão, 1021 - Fortaleza - CE, 60455-165"},
   {marca: "BRITANIA", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A BRITANIA", tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TECNICA LTDA - (85) 21361247", observacoes:" Av. Visconde do Rio Branco, 1605 - loja 1 - Centro, Fortaleza - CE, 60055-170"},
   {marca: "PHILCO", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A PHILCO", tipo: "Fabricante", obs: "www.suporte.philco.com.br", observacoes:"www.suporte.philco.com.br"},
   {marca: "ITATIAIA", modelo: "Todos",garantia: "7 DIAS NA LOJA E 1 ANO COM A ITATIAIA", tipo: "Fabricante", obs: "ASSISTÊNCIA TÉCNICA. ITATIAIA - 0800 200 0020",observacoes:"ASSISTÊNCIA TÉCNICA. ITATIAIA - 0800 200 0020"},
@@ -166,3 +166,4 @@ window.addEventListener("click", (event) => {
 
 // Inicializa a tabela
 gerarTabela();
+
