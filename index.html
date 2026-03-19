@@ -1,49 +1,151 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<title>Sistema de Garantias - Loja de Informática</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Garantias - R7 Informática</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<h1>CENTRAL DE GARANTIAS R7 INFORMÁTICA</h1>
-<input type="text" id="search" placeholder="Digite a marca do produto..." onkeyup="buscar()">
+  <div class="app-container">
 
-<table id="tabelaGarantias">
-  <thead>
-    <tr>
-      <!-- <th>Categoria</th> -->
-      <th>Marcas</th>
-      <th>Modelos</th>
-      <th>Prazo de Garantia</th>
-      <th>Tipo de Garantia</th>
-      <th>Contato / Observações</th>
-      <th>Observações</th>
-      
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Linhas serão geradas automaticamente -->
-  </tbody>
-</table>
+    <!-- HEADER -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="header-logo">
 
+        <img src="/garantias-r7/img/logo.png" class="logo-icon" alt="Logo R7">
 
-<!-- Modal -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span id="fecharModal">&times;</span>
-    <h2 id="modalMarca"></h2>
-    <p id="modalModelo"></p>
-    <p id="modalGarantia"></p>
-    <p id="modalTipo"></p>
-    <p id="modalObs"></p>
-    <p id="modalObservacoes"></p>
+          <div>
+            <h1 class="header-title">Central de Garantias</h1>
+            <span class="header-subtitle">R7 Informática</span>
+          </div>
+        </div>
+        <button class="dark-toggle" id="darkToggle" onclick="toggleDark()">
+          <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <span id="darkLabel">Modo Escuro</span>
+        </button>
+      </div>
+
+<div class="stats-row">
+
+  <div class="stat-card stat-total">
+    <span class="stat-num" id="statTotal">0</span>
+    <span class="stat-label">Total de Marcas</span>
   </div>
-</div>
 
-<script src="script.js"></script>
+  <div class="stat-card stat-orange">
+    <span class="stat-num" id="stat3m">0</span>
+    <span class="stat-label">3 Meses</span>
+  </div>
+
+  <div class="stat-card stat-yellow">
+    <span class="stat-num" id="stat6m">0</span>
+    <span class="stat-label">6 Meses</span>
+  </div>
+
+  <div class="stat-card stat-green">
+    <span class="stat-num" id="stat1a">0</span>
+    <span class="stat-label">1 Ano (Loja)</span>
+  </div>
+
+  <div class="stat-card stat-blue">
+    <span class="stat-num" id="statFab">0</span>
+    <span class="stat-label">Fabricante</span>
+  </div>
+
+</div>
+    </header>
+
+    <!-- SEARCH -->
+    <div class="search-area">
+      <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="text" class="search-input" id="searchInput" placeholder="Buscar marca, modelo..." oninput="buscar()">
+        <button class="search-clear" id="searchClear" onclick="limparBusca()" style="display:none">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+
+      <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filtrar(this,'todos')">Todos</button>
+        <button class="filter-tab" onclick="filtrar(this,'3meses')">3 Meses</button>
+        <button class="filter-tab" onclick="filtrar(this,'6meses')">6 Meses</button>
+        <button class="filter-tab" onclick="filtrar(this,'1ano')">1 Ano</button>
+        <button class="filter-tab" onclick="filtrar(this,'fabricante')">Fabricante</button>
+      </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="table-wrapper">
+      <table class="garantias-table">
+        <thead>
+          <tr>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Garantia</th>
+            <th>Tipo</th>
+            <th>Contato / Observações</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+
+    <div class="results-count" id="resultsCount"></div>
+  </div>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalCloseBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-badge" id="modalBadge"></div>
+        <h2 class="modal-marca" id="modalMarca"></h2>
+        <p class="modal-modelo" id="modalModelo"></p>
+      </div>
+      <div class="modal-body">
+        <div class="modal-row">
+          <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+          <div><span class="modal-label">Garantia</span><span class="modal-value" id="modalGarantia"></span></div>
+        </div>
+        <div class="modal-row">
+          <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          </svg>
+          <div><span class="modal-label">Tipo de Garantia</span><span class="modal-value" id="modalTipo"></span></div>
+        </div>
+        <div class="modal-row">
+          <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.77a16 16 0 0 0 6.29 6.29l.95-.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <div><span class="modal-label">Contato / Observações</span><span class="modal-value" id="modalObs"></span></div>
+        </div>
+        <div class="modal-row" id="modalEndRow">
+          <svg class="modal-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+          </svg>
+          <div><span class="modal-label">Endereço</span><span class="modal-value" id="modalEnd"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
-
