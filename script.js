@@ -69,8 +69,7 @@ const produtos = [
   { marca: "BRX",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "VX",                      modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "SOYA",                    modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "ELG",                     modelo: "Todos"                   garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-    
+  
   // 7 DIAS NA LOJA / 1 ANO COM O FABRICANTE
   { marca: "PULSE",              modelo: "Caixas de Som",  garantia: "7 DIAS NA LOJA / 1 ANO COM A PULSE",     tipo: "Fabricante", obs: "GRUPO MULTI - (89) 8739-2269 / (85) 9 8809-4821",       observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-CE - CEP: 60.450-115" },
   { marca: "NOTEBOOK MULT ULTRA",modelo: "Notebook",       garantia: "7 DIAS NA LOJA / 1 ANO COM A MULT",      tipo: "Fabricante", obs: "GRUPO MULTI - (89) 8739-2269 / (85) 9 8809-4821",       observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-CE - CEP: 60.450-115" },
