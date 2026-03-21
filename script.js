@@ -56,7 +56,8 @@ const produtos = [
   { marca: "SOM BOX",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ASROCK",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "SUPREMA",                 modelo: "Cadeira",                garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-
+  { marca: "INTEL/AMD",               modelo: "Processador",            garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  
   // 1 ANO NA LOJA
   { marca: "MULTILASER",              modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WARRIOR",                 modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
