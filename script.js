@@ -80,8 +80,8 @@ const produtos = [
   { marca: "ELG",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   
   // 7 DIAS NA LOJA / 1 ANO COM O FABRICANTE
-  { marca: "PULSE",              modelo: "Caixas de Som",   garantia: "7 DIAS NA LOJA / 1 ANO COM A PULSE",     tipo: "Fabricante", obs: "GRUPO MULTI - (85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456",        observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-CE - CEP: 60.450-115" },
-  { marca: "NOTEBOOK MULT ULTRA",modelo: "Notebook",        garantia: "7 DIAS NA LOJA / 1 ANO COM A MULT",      tipo: "Fabricante", obs: "GRUPO MULTI - (85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456",        observacoes: "Prof. Raimundo Vitor, 479A - Parquelandia, Fortaleza-CE - CEP: 60.450-115" },
+  { marca: "PULSE",              modelo: "Caixas de Som",   garantia: "7 DIAS NA LOJA / 1 ANO COM A PULSE",     tipo: "Fabricante", obs: "GRUPO MULTI - (85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456",        observacoes: "GRUPO MULTI" },
+  { marca: "NOTEBOOK MULT ULTRA",modelo: "Notebook",        garantia: "7 DIAS NA LOJA / 1 ANO COM A MULT",      tipo: "Fabricante", obs: "GRUPO MULTI - (85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456",        observacoes: "GRUPO MULTI" },
   { marca: "INTELBRAS",          modelo: "Todos",           garantia: "7 DIAS NA LOJA / 1 ANO COM A INTELBRAS", tipo: "Fabricante", obs: "A2 CONECT - (85) 9 8729-5235",                           observacoes: "Av. Antônio Sales, 284 - Joaquim Távora, Fortaleza - CE, 60135-100" },
   { marca: "HP",                 modelo: "Impressoras",     garantia: "7 DIAS NA LOJA / 1 ANO COM A HP",        tipo: "Fabricante", obs: "WWW.SUPPORT.HP.COM",                                     observacoes: "WWW.SUPPORT.HP.COM" },
   { marca: "EPSON",              modelo: "Impressoras",     garantia: "7 DIAS NA LOJA / 1 ANO COM A EPSON",     tipo: "Fabricante", obs: "LW INFORMÁTICA - (85) 3253-5704",                        observacoes: "R. Carlos Ribeiro, 578 - Fátima, Fortaleza - CE, 60040-420" },
