@@ -9,7 +9,7 @@ const produtos = [
   { marca: "INOVA",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "XTRAD",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "STICK",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "X.CELL",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "XCELL",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BAOFENG",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BASIKE",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "TVBOX/STICKTV",           modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -41,6 +41,17 @@ const produtos = [
   { marca: "JORTAN",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "GREATNICE",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "KBROAD",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "ATOMO",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "BOMVINK",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "KBROAD",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "STARMEGA",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "KBROAD",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "C3TECH",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "VISION",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "STAINLESS STEEL",         modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "PEINING",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "ITBLUE",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "AGOLD",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   
   // 6 MESES
   { marca: "MONSTER",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -64,6 +75,9 @@ const produtos = [
   { marca: "SUPREMA",                 modelo: "Cadeira",                garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "INTEL/AMD",               modelo: "Processador",            garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "INFOKIT",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "PALIT ",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "ZOTAC ",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "IFONTE ",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   
   // 1 ANO NA LOJA
   { marca: "MULTILASER",              modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -72,7 +86,7 @@ const produtos = [
   { marca: "GOLDENTEC",               modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PULSE",                   modelo: "Fone de Ouvido/Headset", garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "REVENGER",                modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "HAYON",                   modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "HAYOM",                   modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "TCN",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BRX",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "VX",                      modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -96,6 +110,7 @@ const produtos = [
   { marca: "AIWA",               modelo: "Todos",           garantia: "7 DIAS NA LOJA / 1 ANO COM A AIWA",      tipo: "Fabricante", obs: "REGIONAL ELETRONICA - (85) 3393-3353",                   observacoes: "Av. Bezerra de Menezes, 1034 - São Gerardo, Fortaleza - CE, 60325-001" },
   { marca: "HQ",                 modelo: "Tvs",             garantia: "7 DIAS NA LOJA / 1 ANO COM A HQ",        tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",             observacoes: "Francisco Costa, 112 - Jangurussu, Fortaleza - CE, 60865-220" },
   { marca: "3GREEN",             modelo: "Monitor",         garantia: "7 DIAS NA LOJA / 1 ANO COM A 3GREEN",    tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",             observacoes: "Francisco Costa, 112 - Jangurussu, Fortaleza - CE, 60865-220" },
+  { marca: "LEVIVAN",            modelo: "Todos",           garantia: "7 DIAS NA LOJA PARA TROCA",              tipo: "Fabricante", obs: "ATENÇÃO: TROCA EM LOJA ATÉ 7 DIAS.",                     observacoes: "PRODUTO FRÁGIL: VERIFICAR SE HÁ AVARIAS OU TRINCOS ANTES DE PASSAR NO CAIXA" },
 ];
 
 // ===== ESTADO =====
