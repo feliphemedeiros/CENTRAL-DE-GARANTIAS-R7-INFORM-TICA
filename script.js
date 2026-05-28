@@ -73,7 +73,7 @@ const produtos = [
   { marca: "OXYBR",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PALIT",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "SOM BOX",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "SUPREMA",                 modelo: "Cadeira",                garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "SUPREMA",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ZOTAC",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   
   // 1 ANO NA LOJA
