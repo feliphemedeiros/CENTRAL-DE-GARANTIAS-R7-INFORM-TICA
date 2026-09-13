@@ -24,12 +24,20 @@
             <span class="header-subtitle">R7 Informática</span>
           </div>
         </div>
-        <button class="dark-toggle" id="darkToggle" onclick="toggleDark()">
-          <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-          </svg>
-          <span id="darkLabel">Modo Escuro</span>
-        </button>
+        <div class="header-actions">
+          <button class="policy-toggle" id="policyToggle" onclick="abrirModalLei()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/>
+            </svg>
+            <span>Política de Troca</span>
+          </button>
+          <button class="dark-toggle" id="darkToggle" onclick="toggleDark()">
+            <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+            <span id="darkLabel"></span>
+          </button>
+        </div>
       </div>
 
 <div class="stats-row">
@@ -141,6 +149,39 @@
             <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
           </svg>
           <div><span class="modal-label">Endereço</span><span class="modal-value" id="modalEnd"></span></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POLITICA DE TROCA E DEVOLUCAO -->
+  <div class="modal-overlay" id="modalLei">
+    <div class="modal-box modal-box-lei" id="modalLeiBox">
+      <button class="modal-close" id="modalLeiCloseBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-badge">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/>
+          </svg>
+          Informativo
+        </div>
+        <h2 class="modal-marca">Política de Troca e Devolução</h2>
+        <p class="modal-modelo">R7 Informática</p>
+      </div>
+      <div class="modal-body">
+        <div class="lei-content aberta lei-content-fixa">
+          <p class="lei-secao"><span class="lei-tag lei-tag-loja">COMO FUNCIONA NA R7 INFORMÁTICA</span></p>
+          <p><strong>Compras presenciais não têm direito de arrependimento de 7 dias.</strong> Em caso de defeito, o produto será analisado e poderá ser realizado o conserto, a troca ou a geração de crédito, conforme o caso.</p>
+
+          <p class="lei-secao"><span class="lei-tag lei-tag-cdc">DIREITO GARANTIDO POR LEI</span></p>
+          <p>Por lei, o cliente tem até 90 dias para reclamar de defeito em produtos duráveis (computadores, monitores, periféricos, etc.).<br>A loja tem, em regra, até 30 dias para sanar o defeito.<br>Se não for solucionado em até 30 dias, o cliente poderá optar por troca, restituição do valor ou abatimento proporcional (crédito).<br><strong>O direito de arrependimento de 7 dias é aplicável às compras feitas fora da loja física, como internet ou telefone.</strong></p>
+
+          <p style="color:#9ca3af; font-size:0.78rem;">Baseado no Código de Defesa do Consumidor (Lei 8.078/90).<br>Em caso de dúvida na hora do atendimento, consulte o gerente.</p>
         </div>
       </div>
     </div>
