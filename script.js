@@ -4,18 +4,27 @@ const produtos = [
   { marca: "AGOLD",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "AIKER",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "AISILI",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "AITEK",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "AITEK",                   modelo: "Repetidor / PenDrive",   garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ALTOMEX",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ATOMO",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BAOFENG",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BASIKE",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BMAX",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BOMVINK",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "BYOUL",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "BRASPORT",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "BTOP",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BTECK",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "CAERUS",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "CARTOON",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "C3TECH",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "DIGITAL MICROSCOPE",      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "DELTA",                   modelo: "Suporte Monitor / Microfone / Headset / Fans",        garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "DP",                      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ELETRO MEX",              modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "GARRAFAS",                modelo: "Todos",                  garantia: "3 dias",  tipo: "Loja",       obs: "Garantia cobre apenas garrafas sem gravacao" },
   { marca: "GREATNICE",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "GS WEAR",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "HREBOS",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "IMICE",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "INOVA",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -26,26 +35,37 @@ const produtos = [
   { marca: "KBROAD",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "KETCHUP",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "KTS",                     modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "LEVEL PRO3",              modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "LEHMOX",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "LUATEK",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "MB-TECH/FIT/TOOLS/HOUSE", modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "MB-TECH / FIT / TOOLS / HOUSE / CAR", modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "MAX BEATS",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "MECHA WARRIOR",           modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MEX",                     modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "MICROWEAR",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MOCHILAS",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "OHEY",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PANASONIC",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PEINING",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PETRIN",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "PIX",                     modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PINENG",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "SMART LIFE",              modelo: "Tomadas inteligente",    garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "STAINLESS STEEL",         modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "SING-E",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "STICK",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "TABLET INFANTIL",         modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "TOMATE",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "TVBOX/STICKTV",           modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "UniPower",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "VISION",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WETOKE",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "WISME",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WIFI SMART CAMERA",       modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "VC",                      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "XH",                      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "XCELL",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "XBALOG",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "XTRAD",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "YEPP",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "Z.MASTER",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -53,9 +73,12 @@ const produtos = [
   // 6 MESES
   { marca: "AFOX",                    modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ASROCK",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "AITEK",                   modelo: "Fonte Chaveada",         garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "BRX",                     modelo: "Fonte ATX",              garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BRINGIT",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "Carregador de Notebook",  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "COWBOY",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "DELTA",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "DELTA",                   modelo: "Monitor / Fonte ATX / Placa de Vídeo / Placa Mãe",     garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "EXBOM",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "GRASEP",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "IFONTE",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -72,6 +95,7 @@ const produtos = [
   { marca: "ONISTEK",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "OXYBR",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PALIT",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "SanDisk",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "SOM BOX",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "SUPREMA",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ZOTAC",                   modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -79,9 +103,10 @@ const produtos = [
   // 1 ANO NA LOJA
   { marca: "BRX",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ELG",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "GET",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "GET",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal / Tinta de Impressora e Limpa tela nao tem esse prazo" },
   { marca: "GOLDENTEC",               modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "HAYOM",                   modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "LOGITECH",                modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MULTILASER",              modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PULSE",                   modelo: "Fone de Ouvido/Headset", garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "REVENGER",                modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -90,23 +115,25 @@ const produtos = [
   { marca: "VX",                      modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WARRIOR",                 modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   
-  // 7 DIAS NA LOJA / 1 ANO COM O FABRICANTE
-  { marca: "3GREEN",              modelo: "Monitor",        garantia: "7 DIAS NA LOJA / 1 ANO COM A 3GREEN",    tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",             observacoes: "Av. Visconde do Rio Branco, 1605 - loja 1 — Centro, Fortaleza - CE, 60055-170" },
-  { marca: "AIWA",                modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A AIWA",      tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",             observacoes: "Av. Visconde do Rio Branco, 1605 - loja 1 — Centro, Fortaleza - CE, 60055-170" },
-  { marca: "BRITANIA",            modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A BRITANIA",  tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TECNICA - (85) 9 9998-0010",             observacoes: "Av. Visconde do Rio Branco, 1605 - loja 1 - Centro, Fortaleza - CE, 60055-170" },
-  { marca: "CANON",               modelo: "Impressoras",    garantia: "7 DIAS NA LOJA / 1 ANO COM A CANON",     tipo: "Fabricante", obs: "www.canon.com.br/atendimento/servico-tecnico",           observacoes: "www.canon.com.br" },
-  { marca: "ELGIN",               modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A ELGIN",     tipo: "Fabricante", obs: "CASA MAGALHÃES - (85) 9 9215-4946",                      observacoes: "Rua Luiza Miranda Coelho, 800 - Eng. Luciano Cavalcante, Fortaleza - CE, 60811-110" },
-  { marca: "EPSON",               modelo: "Impressoras",    garantia: "7 DIAS NA LOJA / 1 ANO COM A EPSON",     tipo: "Fabricante", obs: "LW INFORMÁTICA - (85) 3253-5704",                        observacoes: "R. Carlos Ribeiro, 578 - Fátima, Fortaleza - CE, 60040-420" },
-  { marca: "HP",                  modelo: "Impressoras",    garantia: "7 DIAS NA LOJA / 1 ANO COM A HP",        tipo: "Fabricante", obs: "WWW.SUPPORT.HP.COM",                                     observacoes: "WWW.SUPPORT.HP.COM" },
-  { marca: "HQ",                  modelo: "Tvs",            garantia: "7 DIAS NA LOJA / 1 ANO COM A HQ",        tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",              observacoes: "Francisco Costa, 112 - Jangurussu, Fortaleza - CE, 60865-220" },
-  { marca: "INTELBRAS",           modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A INTELBRAS", tipo: "Fabricante", obs: "A2 CONECT - (85) 9 8729-5235",                           observacoes: "Av. Antônio Sales, 284 - Joaquim Távora, Fortaleza - CE, 60135-100" },
-  { marca: "ITATIAIA",            modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A ITATIAIA",  tipo: "Fabricante", obs: "ASSISTÊNCIA TÉCNICA ITATIAIA - 0800 200 0020",           observacoes: "ASSISTÊNCIA TÉCNICA ITATIAIA - 0800 200 0020" },
-  { marca: "JBL",                 modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A JBL",       tipo: "Fabricante", obs: "OPELICANO ASSISTÊNCIA TÉCNICA LTDA - (85) 9 8969-0000",  observacoes: "R. Esperanto, 1390 - Vila União, Fortaleza - CE, 60410-622" },
-  { marca: "NOTEBOOK MULT ULTRA", modelo: "Notebook",       garantia: "7 DIAS NA LOJA / 1 ANO COM A MULT",      tipo: "Fabricante", obs: "(85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456", observacoes: "GRUPO MULTI" },
-  { marca: "PHILCO",              modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A PHILCO",    tipo: "Fabricante", obs: "www.suporte.philco.com.br",                              observacoes: "www.suporte.philco.com.br" },
-  { marca: "PULSE",               modelo: "Caixas de Som",  garantia: "7 DIAS NA LOJA / 1 ANO COM A PULSE",     tipo: "Fabricante", obs: "(85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456", observacoes: "GRUPO MULTI" },
-  { marca: "TANCA",               modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A TANCA",     tipo: "Fabricante", obs: "ASSISTÊNCIA GLAUTEC - (14) 99626-7391",                  observacoes: "ASSISTÊNCIA GLAUTEC - (14) 99626-7391" },
-  { marca: "TSHARA",              modelo: "Todos",          garantia: "7 DIAS NA LOJA / 1 ANO COM A TSHARA",    tipo: "Fabricante", obs: "UPS SOLUÇÕES - (85) 9 8899-6308",                        observacoes: "R. Martins Neto, 313 - Antônio Bezerra, Fortaleza - CE, 60360-415" },
+  // 1 ANO COM O FABRICANTE
+  { marca: "3GREEN",              modelo: "Monitor",        garantia: "1 ANO COM A 3GREEN",    tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",             observacoes: "Av. Visconde do Rio Branco, 1605 - loja 1 — Centro, Fortaleza - CE, 60055-170" },
+  { marca: "AIWA",                modelo: "Todos",          garantia: "1 ANO COM A AIWA",      tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",             observacoes: "Av. Visconde do Rio Branco, 1605 - loja 1 — Centro, Fortaleza - CE, 60055-170" },
+  { marca: "BRITANIA",            modelo: "Todos",          garantia: "1 ANO COM A BRITANIA",  tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TECNICA - (85) 9 9998-0010",             observacoes: "Av. Visconde do Rio Branco, 1605 - loja 1 - Centro, Fortaleza - CE, 60055-170" },
+  { marca: "CANON",               modelo: "Impressoras",    garantia: "1 ANO COM A CANON",     tipo: "Fabricante", obs: "www.canon.com.br/atendimento/servico-tecnico",           observacoes: "www.canon.com.br" },
+  { marca: "ELGIN",               modelo: "Todos",          garantia: "1 ANO COM A ELGIN",     tipo: "Fabricante", obs: "CASA MAGALHÃES - (85) 9 9215-4946",                      observacoes: "Rua Luiza Miranda Coelho, 800 - Eng. Luciano Cavalcante, Fortaleza - CE, 60811-110" },
+  { marca: "EPSON",               modelo: "Impressoras",    garantia: "1 ANO COM A EPSON",     tipo: "Fabricante", obs: "LW INFORMÁTICA - (85) 3253-5704",                        observacoes: "R. Carlos Ribeiro, 578 - Fátima, Fortaleza - CE, 60040-420" },
+  { marca: "HP",                  modelo: "Impressoras",    garantia: "1 ANO COM A HP",        tipo: "Fabricante", obs: "WWW.SUPPORT.HP.COM",                                     observacoes: "WWW.SUPPORT.HP.COM" },
+  { marca: "HQ",                  modelo: "Tvs",            garantia: "1 ANO COM A HQ",        tipo: "Fabricante", obs: "JCS ASSISTÊNCIA TÉCNICA - (85) 9 9998-0010",              observacoes: "Francisco Costa, 112 - Jangurussu, Fortaleza - CE, 60865-220" },
+  { marca: "INTELBRAS",           modelo: "Todos",          garantia: "1 ANO COM A INTELBRAS", tipo: "Fabricante", obs: "A2 CONECT - (85) 9 8729-5235",                           observacoes: "Av. Antônio Sales, 284 - Joaquim Távora, Fortaleza - CE, 60135-100" },
+  { marca: "ITATIAIA",            modelo: "Todos",          garantia: "1 ANO COM A ITATIAIA",  tipo: "Fabricante", obs: "ASSISTÊNCIA TÉCNICA ITATIAIA - 0800 200 0020",           observacoes: "ASSISTÊNCIA TÉCNICA ITATIAIA - 0800 200 0020" },
+  { marca: "JBL",                 modelo: "Todos",          garantia: "1 ANO COM A JBL",       tipo: "Fabricante", obs: "OPELICANO ASSISTÊNCIA TÉCNICA LTDA - (85) 9 8969-0000",  observacoes: "R. Esperanto, 1390 - Vila União, Fortaleza - CE, 60410-622" },
+  { marca: "NOTEBOOK MULT ULTRA", modelo: "Notebook",       garantia: "1 ANO COM A MULT",      tipo: "Fabricante", obs: "(85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456", observacoes: "GRUPO MULTI" },
+  { marca: "SOUND MONDIAL",       modelo: "Todos",          garantia: "1 ANO COM A MONDIAL",   tipo: "Fabricante", obs: "ELETRÔNICA N-ALFA - (85) 9 9278-8843",                   observacoes: "Rua Cardeal Arcoverde, 1012 - Autran Nunes" },
+  { marca: "PHILCO",              modelo: "Todos",          garantia: "1 ANO COM A PHILCO",    tipo: "Fabricante", obs: "www.suporte.philco.com.br",                              observacoes: "www.suporte.philco.com.br" },
+  { marca: "PULSE",               modelo: "Caixas de Som",  garantia: "1 ANO COM A PULSE",     tipo: "Fabricante", obs: "(85) 8739-2269 / (85) 9 8809-4821 / (85) 3393-3353 / (85) 3036-2456", observacoes: "GRUPO MULTI" },
+  { marca: "SUMAY",               modelo: "Todos",          garantia: "1 ANO COM A SUMAY",     tipo: "Fabricante", obs: "ELETRÔNICA ITASOM - (85) 3223-1856",                     observacoes: "AV. PADRE IBIAPINA, 1365 - JACARECÉ, FORTALEZA - CE, 60010-690" },
+  { marca: "TANCA",               modelo: "Todos",          garantia: "1 ANO COM A TANCA",     tipo: "Fabricante", obs: "ASSISTÊNCIA GLAUTEC - (14) 99626-7391",                  observacoes: "ASSISTÊNCIA GLAUTEC - (14) 99626-7391" },
+  { marca: "TSHARA",              modelo: "Todos",          garantia: "1 ANO COM A TSHARA",    tipo: "Fabricante", obs: "UPS SOLUÇÕES - (85) 9 8899-6308",                        observacoes: "R. Martins Neto, 313 - Antônio Bezerra, Fortaleza - CE, 60360-415" },
 ];
 
 // ===== ESTADO =====
@@ -117,6 +144,8 @@ var produtosFiltrados = [];
 var modal       = document.getElementById("modal");
 var modalBox    = document.getElementById("modalBox");
 var closeBtn    = document.getElementById("modalCloseBtn");
+var modalLei      = document.getElementById("modalLei");
+var closeLeiBtn   = document.getElementById("modalLeiCloseBtn");
 var tbody       = document.getElementById("tbody");
 var searchInput = document.getElementById("searchInput");
 var searchClear = document.getElementById("searchClear");
@@ -132,20 +161,23 @@ function toggleDark() {
 
   if (isDark) {
     icon.innerHTML = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
-    label.textContent = "Modo Claro";
+    label.textContent = "";
   } else {
     icon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
-    label.textContent = "Modo Escuro";
+    label.textContent = "";
   }
 }
 
 // ===== BADGES =====
-function getBadgeGarantia(garantia) {
+function getBadgeGarantia(garantia, tipo) {
   var g = garantia.toLowerCase();
-  if (g.indexOf("3 meses")  !== -1) return { label: "3 Meses",        cls: "badge-orange" };
-  if (g.indexOf("6 meses")  !== -1) return { label: "6 Meses",        cls: "badge-yellow" };
-  if (g.indexOf("1 ano")    !== -1 && g.indexOf("7 dias") === -1) return { label: "1 Ano", cls: "badge-green" };
-  if (g.indexOf("7 dias")   !== -1) return { label: "7 Dias / 1 Ano", cls: "badge-blue"   };
+  var t = (tipo || "").toLowerCase().trim();
+  if (g.indexOf("3 meses") !== -1) return { label: "3 Meses", cls: "badge-orange" };
+  if (g.indexOf("6 meses") !== -1) return { label: "6 Meses", cls: "badge-yellow" };
+  if (g.indexOf("1 ano")   !== -1) {
+    if (t === "fabricante") return { label: "1 Ano (Fabricante)", cls: "badge-blue" };
+    return { label: "1 Ano", cls: "badge-green" };
+  }
   return { label: garantia, cls: "badge-gray" };
 }
 
@@ -169,7 +201,7 @@ function renderTabela(lista) {
   var html = "";
   for (var i = 0; i < lista.length; i++) {
     var p     = lista[i];
-    var badge = getBadgeGarantia(p.garantia);
+    var badge = getBadgeGarantia(p.garantia, p.tipo);
     var tipoCls   = getTipoCls(p.tipo);
     var tipoLabel = getTipoLabel(p.tipo);
     html += '<tr onclick="abrirModal(' + i + ')">'
@@ -199,7 +231,7 @@ function aplicarFiltros() {
     var matchFiltro = true;
     if (filtroAtivo === "3meses")     matchFiltro = g.indexOf("3 meses") !== -1;
     if (filtroAtivo === "6meses")     matchFiltro = g.indexOf("6 meses") !== -1;
-    if (filtroAtivo === "1ano")       matchFiltro = g.indexOf("1 ano") !== -1 && g.indexOf("7 dias") === -1;
+    if (filtroAtivo === "1ano")       matchFiltro = g.indexOf("1 ano") !== -1 && t === "loja";
     if (filtroAtivo === "fabricante") matchFiltro = t === "fabricante";
 
     return matchSearch && matchFiltro;
@@ -231,7 +263,7 @@ function filtrar(btn, chave) {
 // CORREÇÃO: usar classList.add/remove('aberto') — nunca misturar com style.display
 function abrirModal(index) {
   var p     = produtosFiltrados[index];
-  var badge = getBadgeGarantia(p.garantia);
+  var badge = getBadgeGarantia(p.garantia, p.tipo);
   var isLoja = p.tipo.toLowerCase().trim() === "loja";
 
   document.getElementById("modalBadge").textContent   = badge.label;
@@ -258,17 +290,35 @@ function fecharModal() {
   document.body.classList.remove("modal-aberto");
 }
 
+// ===== MODAL POLITICA DE TROCA E DEVOLUCAO (acessivel pelo botao do cabecalho) =====
+function abrirModalLei() {
+  modalLei.classList.add("aberto");
+  document.body.classList.add("modal-aberto");
+}
+
+function fecharModalLei() {
+  modalLei.classList.remove("aberto");
+  document.body.classList.remove("modal-aberto");
+}
+
 // Fechar ao clicar no X
 closeBtn.addEventListener("click", fecharModal);
+closeLeiBtn.addEventListener("click", fecharModalLei);
 
 // Fechar ao clicar no fundo escuro (overlay), mas NÃO no conteúdo do modal
 modal.addEventListener("click", function(e) {
   if (e.target === modal) fecharModal();
 });
+modalLei.addEventListener("click", function(e) {
+  if (e.target === modalLei) fecharModalLei();
+});
 
-// Fechar com tecla Esc
+// Fechar com tecla Esc (fecha o modal que estiver aberto)
 document.addEventListener("keydown", function(e) {
-  if (e.key === "Escape") fecharModal();
+  if (e.key === "Escape") {
+    fecharModal();
+    fecharModalLei();
+  }
 });
 
 // ===== STATS =====
@@ -280,7 +330,7 @@ function calcularStats() {
     var t = produtos[i].tipo.toLowerCase().trim();
     if (g.indexOf("3 meses") !== -1) tres++;
     if (g.indexOf("6 meses") !== -1) seis++;
-    if (g.indexOf("1 ano") !== -1 && g.indexOf("7 dias") === -1) um++;
+    if (g.indexOf("1 ano") !== -1 && t === "loja") um++;
     if (t === "fabricante") fab++;
   }
   document.getElementById("statTotal").textContent = total;
