@@ -109,6 +109,51 @@ body.dark .app-header {
   transform: translateY(0);
 }
 
+.dark-toggle span { display: none; }
+
+/* Trava a largura do texto para o botao nao "pular" ao trocar Modo Escuro/Claro */
+#darkLabel {
+  display: none !important;
+}
+
+/* ===== HEADER ACTIONS (agrupa botoes) ===== */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ===== BOTAO POLITICA DE TROCA ===== */
+.policy-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #2e7d32;
+  border: 1px solid #2e7d32;
+  color: #fff;
+
+  padding: 9px 18px;
+  border-radius: 50px;
+  cursor: pointer;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.1s;
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.policy-toggle:hover {
+  background: #256b29;
+  border-color: #256b29;
+  transform: translateY(-1px);
+}
+
+.policy-toggle:active {
+  transform: translateY(0);
+}
+
 /* ===== STATS ===== */
 .stats-row {
   display: grid;
@@ -581,6 +626,96 @@ body.dark .modal-icon { color: #4f6ef7; }
 
 body.dark .modal-value { color: #e2e8f0; }
 
+/* ===== TROCA / DEVOLUCAO (LEI) - ROW EXPANSIVEL ===== */
+.modal-row-toggle {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.modal-row-toggle:hover {
+  background: #e2e7f5;
+}
+
+body.dark .modal-row-toggle:hover {
+  background: #2d3150;
+}
+
+.lei-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  padding: 0 16px;
+  border-radius: 12px;
+  background: #eef2f7;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: max-height 0.25s ease, opacity 0.2s ease, padding 0.25s ease;
+}
+
+body.dark .lei-content {
+  background: #252840;
+}
+
+.lei-content.aberta {
+  max-height: 400px;
+  opacity: 1;
+  padding: 14px 16px;
+}
+
+.lei-content p {
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: #4b5563;
+}
+
+body.dark .lei-content p {
+  color: #9ca3af;
+}
+
+.lei-content p strong {
+  color: #1a1d23;
+}
+
+body.dark .lei-content p strong {
+  color: #e2e8f0;
+}
+
+.lei-secao {
+  margin-top: 4px;
+}
+
+.lei-secao:first-child {
+  margin-top: 0;
+}
+
+.lei-tag {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 50px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.6px;
+}
+
+.lei-tag-loja { background: #dbe4ff; color: #0004cc; }
+body.dark .lei-tag-loja { background: rgba(79, 110, 247, 0.2); color: #93a9ff; }
+
+.lei-tag-cdc { background: #fef3c7; color: #92400e; }
+body.dark .lei-tag-cdc { background: rgba(217, 119, 6, 0.2); color: #fcd34d; }
+
+/* ===== MODAL DEDICADO - POLITICA DE TROCA ===== */
+.lei-content-fixa {
+  background: transparent;
+  padding: 0;
+  max-height: none;
+  opacity: 1;
+}
+
+.modal-box-lei .modal-body {
+  padding-top: 20px;
+}
+
 
 .stats-row {
   display: grid;
@@ -624,7 +759,43 @@ body.dark .modal-value { color: #e2e8f0; }
   .app-container { padding: 14px 12px 40px; }
   .app-header { padding: 18px 18px 16px; border-radius: 12px; }
   .header-title { font-size: 1.2rem; }
-  .dark-toggle span { display: none; }
+  /* ===== BOTOES DO CABECALHO NO CELULAR ===== */
+  .header-actions {
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .dark-toggle,
+  .policy-toggle {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    padding: 0;
+    gap: 0;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .dark-toggle span,
+  .policy-toggle span,
+  #darkLabel {
+    display: none !important;
+  }
+
+  .dark-toggle svg,
+  .policy-toggle svg {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+  }
+
+  .dark-toggle {
+    font-size: 20px;
+  }
+
+  .policy-toggle {
+    font-size: 18px;
+  }
   .stats-row { grid-template-columns: repeat(2, 1fr); }
   .modal-box { border-radius: 14px; }
   .modal-header { padding: 22px 18px 18px; }
@@ -655,4 +826,3 @@ body.dark .modal-value { color: #e2e8f0; }
 }
 
 }
-
