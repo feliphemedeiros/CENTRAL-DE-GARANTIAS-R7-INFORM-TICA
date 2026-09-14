@@ -22,7 +22,6 @@ const produtos = [
   { marca: "DELTA",                   modelo: "Suporte Monitor / Microfone / Headset / Fans",        garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "DP",                      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ELETRO MEX",              modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "GARRAFAS",                modelo: "Todos",                  garantia: "3 dias",  tipo: "Loja",       obs: "Garantia cobre apenas garrafas sem gravacao" },
   { marca: "GREATNICE",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "GS WEAR",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "HREBOS",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -43,7 +42,6 @@ const produtos = [
   { marca: "MECHA WARRIOR",           modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MEX",                     modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MICROWEAR",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "MOCHILAS",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "OHEY",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PANASONIC",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PEINING",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -69,7 +67,8 @@ const produtos = [
   { marca: "XTRAD",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "YEPP",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "Z.MASTER",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  
+  { marca: "GARRAFAS",                modelo: "Todos",                  garantia: "3 dias",  tipo: "Loja",       obs: "Prazo de 3 dias para troca, desde que a garrafa não tenha sido personalizada." },
+
   // 6 MESES
   { marca: "AFOX",                    modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ASROCK",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -103,7 +102,7 @@ const produtos = [
   // 1 ANO NA LOJA
   { marca: "BRX",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ELG",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "GET",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal / Tinta de Impressora e Limpa tela nao tem esse prazo" },
+  { marca: "GET",                     modelo: "Placa Mãe / CX Som / Mouse",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "GOLDENTEC",               modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "HAYOM",                   modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "LOGITECH",                modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -134,6 +133,15 @@ const produtos = [
   { marca: "SUMAY",               modelo: "Todos",          garantia: "1 ANO COM A SUMAY",     tipo: "Fabricante", obs: "ELETRÔNICA ITASOM - (85) 3223-1856",                     observacoes: "AV. PADRE IBIAPINA, 1365 - JACARECÉ, FORTALEZA - CE, 60010-690" },
   { marca: "TANCA",               modelo: "Todos",          garantia: "1 ANO COM A TANCA",     tipo: "Fabricante", obs: "ASSISTÊNCIA GLAUTEC - (14) 99626-7391",                  observacoes: "ASSISTÊNCIA GLAUTEC - (14) 99626-7391" },
   { marca: "TSHARA",              modelo: "Todos",          garantia: "1 ANO COM A TSHARA",    tipo: "Fabricante", obs: "UPS SOLUÇÕES - (85) 9 8899-6308",                        observacoes: "R. Martins Neto, 313 - Antônio Bezerra, Fortaleza - CE, 60360-415" },
+  { marca: "LEVIVAN",             modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Produto frágil. Verificar se há trincas, riscos ou avarias antes de sair da loja.",},
+  { marca: "PANASONIC",           modelo: "Pilhas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir modelo, tamanho, quantidade e integridade da embalagem no ato da compra.",},
+  { marca: "MADEBASICS",          modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Produto frágil. Verificar se há trincas, riscos ou avarias antes de sair da loja.",},
+  { marca: "DOGGO",               modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir tamanho, modelo e condições da peça no ato da compra.",},
+  { marca: "MOCHILAS",            modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",      obs: "Conferir tamanho, modelo e condições da peça no ato da compra." },
+  { marca: "GET",                 modelo: "Tintas / Limpa Tela", garantia: "CONFERÊNCIA NO ATO DA COMPRA",   tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "NEXEL TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "EPSON TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "HP CARTUCHOS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
 ];
 
 // ===== ESTADO =====
