@@ -42,6 +42,7 @@ const produtos = [
   { marca: "MECHA WARRIOR",           modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MEX",                     modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "MICROWEAR",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "NATICON",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "OHEY",                    modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PANASONIC",               modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "PEINING",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -58,6 +59,7 @@ const produtos = [
   { marca: "UniPower",                modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "VISION",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WETOKE",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "WS BATTERY",              modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WISME",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "WIFI SMART CAMERA",       modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "VC",                      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -72,7 +74,7 @@ const produtos = [
   // 6 MESES
   { marca: "AFOX",                    modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ASROCK",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "AITEK",                   modelo: "Fonte Chaveada",         garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "AITEK",                   modelo: "Fonte Chaveada / Carregador Universal",         garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BRX",                     modelo: "Fonte ATX",              garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BRINGIT",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "Carregador de Notebook",  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -141,6 +143,9 @@ const produtos = [
   { marca: "NEXEL TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "EPSON TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "HP CARTUCHOS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "IMPLASTEC",           modelo: "Alcool",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir quantidade e integridade da embalagem no ato da compra.",},
+  { marca: "SOLVENPLUS",          modelo: "Alcool",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir quantidade e integridade da embalagem no ato da compra.",},
+
 ];
 
 // ===== ESTADO =====
