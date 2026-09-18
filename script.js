@@ -102,7 +102,7 @@ const produtos = [
   // 1 ANO NA LOJA
   { marca: "BRX",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ELG",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "GET",                     modelo: "Placa Mãe / CX Som / Mouse",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "GET",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "⚠️ TINTA E LIMPA TELA GET — conferir modelo, compatibilidade, cor e embalagem no ato da compra." },
   { marca: "GOLDENTEC",               modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "HAYOM",                   modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "LOGITECH",                modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -138,7 +138,6 @@ const produtos = [
   { marca: "MADEBASICS",          modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Produto frágil. Verificar se há trincas, riscos ou avarias antes de sair da loja.",},
   { marca: "DOGGO",               modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir tamanho, modelo e condições da peça no ato da compra.",},
   { marca: "MOCHILAS",            modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",      obs: "Conferir tamanho, modelo e condições da peça no ato da compra." },
-  { marca: "GET",                 modelo: "Tintas / Limpa Tela", garantia: "CONFERÊNCIA NO ATO DA COMPRA",   tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "NEXEL TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "EPSON TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "HP CARTUCHOS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
