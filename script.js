@@ -103,7 +103,7 @@ const produtos = [
   
   // 1 ANO NA LOJA
   { marca: "BRX",                     modelo: "Monitor",                garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "ELG",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "ELG",                     modelo: "Todos (exceto cadeiras)",garantia: "1 ANO",   tipo: "Loja",       obs: "⚠️ Cadeiras têm garantia própria com o fabricante." ,     observacoes: "Garantia via fabricante. Solicitação pelo site elg.com.br, aba Contato > SAC (resposta por e-mail)." },
   { marca: "GET",                     modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "⚠️ TINTA E LIMPA TELA GET — conferir modelo, compatibilidade, cor e embalagem no ato da compra." },
   { marca: "GOLDENTEC",               modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "HAYOM",                   modelo: "Todos",                  garantia: "1 ANO",   tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -139,13 +139,12 @@ const produtos = [
   { marca: "PANASONIC",           modelo: "Pilhas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir modelo, tamanho, quantidade e integridade da embalagem no ato da compra.",},
   { marca: "MADEBASICS",          modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Produto frágil. Verificar se há trincas, riscos ou avarias antes de sair da loja.",},
   { marca: "DOGGO",               modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir tamanho, modelo e condições da peça no ato da compra.",},
-  { marca: "MOCHILAS",            modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",      obs: "Conferir tamanho, modelo e condições da peça no ato da compra." },
-  { marca: "NEXEL TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
-  { marca: "EPSON TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
-  { marca: "HP CARTUCHOS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA", tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "MOCHILAS",            modelo: "Todos",          garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",      obs: "Conferir tamanho, modelo e condições da peça no ato da compra." },
+  { marca: "NEXEL TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "EPSON TINTAS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
+  { marca: "HP CARTUCHOS",        modelo: "Tintas",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "IMPLASTEC",           modelo: "Alcool",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir quantidade e integridade da embalagem no ato da compra.",},
   { marca: "SOLVENPLUS",          modelo: "Alcool",         garantia: "CONFERÊNCIA NO ATO DA COMPRA",tipo: "Loja",       obs: "Conferir quantidade e integridade da embalagem no ato da compra.",},
-
 ];
 
 // ===== ESTADO =====
@@ -285,13 +284,13 @@ function abrirModal(index) {
   document.getElementById("modalTipo").textContent    = p.tipo;
   document.getElementById("modalObs").textContent     = p.obs;
 
-  var endRow = document.getElementById("modalEndRow");
-  if (!isLoja && p.observacoes) {
-    endRow.style.display = "flex";
-    document.getElementById("modalEnd").textContent = p.observacoes;
-  } else {
-    endRow.style.display = "none";
-  }
+var endRow = document.getElementById("modalEndRow");
+if (p.observacoes) {
+  endRow.style.display = "flex";
+  document.getElementById("modalEnd").textContent = p.observacoes;
+} else {
+  endRow.style.display = "none";
+}
 
   modal.classList.add("aberto");
   document.body.classList.add("modal-aberto");
