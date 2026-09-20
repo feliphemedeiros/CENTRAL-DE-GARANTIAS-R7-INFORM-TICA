@@ -18,6 +18,7 @@ const produtos = [
   { marca: "CAERUS",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "CARTOON",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "C3TECH",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "DALING",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "DIGITAL MICROSCOPE",      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "DELTA",                   modelo: "Suporte Monitor / Microfone / Headset / Fans",        garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "DP",                      modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
@@ -74,7 +75,7 @@ const produtos = [
   // 6 MESES
   { marca: "AFOX",                    modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ASROCK",                  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "AITEK",                   modelo: "Fonte Chaveada / Carregador Universal",         garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "AITEK",                   modelo: "Fonte Chaveada / Carregador Universal / Mouse",         garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BRX",                     modelo: "Fonte ATX",              garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BRINGIT",                 modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "Carregador de Notebook",  modelo: "Todos",                  garantia: "6 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
