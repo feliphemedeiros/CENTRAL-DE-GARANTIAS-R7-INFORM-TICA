@@ -4,7 +4,7 @@ const produtos = [
   { marca: "AGOLD",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "AIKER",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "AISILI",                  modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
-  { marca: "AITEK",                   modelo: "Repetidor / PenDrive",   garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
+  { marca: "AITEK",                   modelo: "Repetidor / PenDrive / Controle / Adp Wi-Fi",   garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ALTOMEX",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "ATOMO",                   modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
   { marca: "BAOFENG",                 modelo: "Todos",                  garantia: "3 meses", tipo: "Loja",       obs: "Precisa de Nota Fiscal" },
