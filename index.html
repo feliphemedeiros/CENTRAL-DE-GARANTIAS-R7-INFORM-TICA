@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Central de Garantias - R7 Informática</title>
+  <meta name="description" content="Consulta rápida de garantias por marca - R7 Informática">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+
+    <!-- CABEÇALHO -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="header-logo">
+          <img src="logo.png" class="logo-icon" alt="Logo R7 Informática">
+          <div>
+            <h1 class="header-title">Central de Garantias</h1>
+            <span class="header-subtitle">R7 Informática</span>
+          </div>
+        </div>
+        <div class="header-actions">
+          <button class="policy-toggle" type="button" onclick="abrirModalLei()" title="Política de Troca">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="15" x2="15" y2="15"/><line x1="9" y1="11" x2="15" y2="11"/>
+            </svg>
+            <span>Política de Troca</span>
+          </button>
+          <button class="dark-toggle" id="darkToggle" type="button" onclick="toggleDark()">
+            <svg id="darkIcon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Os cards funcionam como filtro: clique para ver só aquela categoria -->
+      <div class="stats-row" role="group" aria-label="Filtrar por tipo de garantia">
+        <button type="button" class="stat-card stat-total ativo" data-filtro="todos" aria-pressed="true">
+          <span class="stat-num" data-stat="todos">0</span>
+          <span class="stat-label">Todas as marcas</span>
+        </button>
+        <button type="button" class="stat-card stat-orange" data-filtro="3m" aria-pressed="false">
+          <span class="stat-num" data-stat="3m">0</span>
+          <span class="stat-label">3 Meses</span>
+        </button>
+        <button type="button" class="stat-card stat-yellow" data-filtro="6m" aria-pressed="false">
+          <span class="stat-num" data-stat="6m">0</span>
+          <span class="stat-label">6 Meses</span>
+        </button>
+        <button type="button" class="stat-card stat-green" data-filtro="1a" aria-pressed="false">
+          <span class="stat-num" data-stat="1a">0</span>
+          <span class="stat-label">1 Ano (Loja)</span>
+        </button>
+        <button type="button" class="stat-card stat-blue" data-filtro="fab" aria-pressed="false">
+          <span class="stat-num" data-stat="fab">0</span>
+          <span class="stat-label">Fabricante</span>
+        </button>
+        <button type="button" class="stat-card stat-gray" data-filtro="conf" aria-pressed="false">
+          <span class="stat-num" data-stat="conf">0</span>
+          <span class="stat-label">Conferir na compra</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- BUSCA (fica fixa no topo ao rolar) -->
+    <div class="search-area">
+      <div class="search-wrapper">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" class="search-input" id="searchInput" placeholder="Buscar marca ou produto (ex.: JBL, mouse)" oninput="buscar()" autocomplete="off" aria-label="Buscar marca ou produto">
+        <button class="search-clear" id="searchClear" type="button" onclick="limparBusca()" style="display:none" aria-label="Limpar busca">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- AVISO GERAL -->
+    <div class="aviso-geral">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+      <span>Toda garantia <strong>na loja</strong> precisa da <strong>Nota Fiscal</strong>. Clique em uma marca para ver detalhes e contatos.</span>
+    </div>
+
+    <!-- LISTA -->
+    <div class="lista-wrapper">
+      <div class="lista-cabecalho" aria-hidden="true">
+        <span>Marca</span>
+        <span>Garantia</span>
+        <span>Produtos</span>
+      </div>
+      <div id="lista" class="lista"></div>
+    </div>
+
+    <footer class="rodape">
+      <span id="resultsCount"></span>
+      <span>Atualizado em <strong id="ultimaAtualizacao"></strong></span>
+    </footer>
+  </div>
+
+  <!-- MODAL DE DETALHES -->
+  <div class="modal-overlay" id="modal">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalMarca">
+      <button class="modal-close" id="modalCloseBtn" type="button" aria-label="Fechar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-badge" id="modalBadge"></div>
+        <h2 class="modal-marca" id="modalMarca"></h2>
+        <p class="modal-modelo" id="modalModelo"></p>
+      </div>
+      <div class="modal-body">
+
+        <div id="modalConteudo" class="modal-conteudo"></div>
+
+        <div class="modal-acoes">
+          <button type="button" class="btn-copiar" id="btnCopiar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            Copiar
+          </button>
+          <button type="button" class="btn-copiar btn-imprimir" id="btnImprimir">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+            Imprimir
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL POLÍTICA DE TROCA E DEVOLUÇÃO -->
+  <div class="modal-overlay" id="modalLei">
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="tituloLei">
+      <button class="modal-close" id="modalLeiCloseBtn" type="button" aria-label="Fechar">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+      <div class="modal-header">
+        <div class="modal-badge">Informativo</div>
+        <h2 class="modal-marca" id="tituloLei">Política de Troca e Devolução</h2>
+        <p class="modal-modelo">R7 Informática</p>
+      </div>
+      <div class="modal-body">
+        <div class="lei-bloco">
+          <span class="lei-tag lei-tag-loja">COMO FUNCIONA NA R7 INFORMÁTICA</span>
+          <p><strong>Compras presenciais não têm direito de arrependimento de 7 dias.</strong> Em caso de defeito, o produto será analisado e poderá ser realizado o conserto, a troca ou a geração de crédito, conforme o caso.</p>
+        </div>
+        <div class="lei-bloco">
+          <span class="lei-tag lei-tag-cdc">DIREITO GARANTIDO POR LEI</span>
+          <ul>
+            <li>O cliente tem até <strong>90 dias</strong> para reclamar de defeito em produtos duráveis (computadores, monitores, periféricos etc.).</li>
+            <li>A loja tem, em regra, até <strong>30 dias</strong> para resolver o defeito.</li>
+            <li>Se não for resolvido em 30 dias, o cliente pode escolher entre troca, devolução do valor ou abatimento proporcional (crédito).</li>
+            <li><strong>O direito de arrependimento de 7 dias vale para compras feitas fora da loja física</strong>, como internet ou telefone.</li>
+          </ul>
+          <p class="lei-fonte">Baseado no Código de Defesa do Consumidor (Lei 8.078/90).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- Folha de impressão (só aparece na hora de imprimir) -->
+  <div id="areaImpressao" class="area-impressao" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
