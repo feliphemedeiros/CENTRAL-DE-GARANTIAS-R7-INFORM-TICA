@@ -82,3 +82,16 @@ R7 Informática
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
+
+
+---
+
+## ✏️ Como atualizar as garantias
+
+Tudo fica no começo do arquivo `script.js`, na lista `produtos`.
+
+* **Nova marca:** copie uma linha parecida e troque os dados.
+* **Marca com garantias diferentes por produto** (ex.: AITEK): crie uma linha para cada produto com o **mesmo nome de marca**. O site junta tudo em um card só.
+* **Aviso em destaque para uma marca:** adicione na lista `avisosMarca` (ex.: `"AITEK": "Vale a garantia da caixa..."`).
+* **Produto que a loja não testa** (DVR, interfone, telefone RJ11...): coloque `naoTesta: true` na linha do produto. Aparece o aviso vermelho "Não testamos na loja" com o texto dos 7 dias para troca. O número de dias fica em `DIAS_TROCA_NAO_TESTADO`, no topo do `script.js`.
+* **Data de atualização:** altere `ULTIMA_ATUALIZACAO` no topo do `script.js`.
