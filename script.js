@@ -44,7 +44,8 @@ const produtos = [
   { marca: "AIKER",              modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "AISILI",             modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "AITEK",              modelo: "Todos", garantia: "3 meses ou 6 meses (ver na caixa)", tipo: "Loja", busca: "repetidor pendrive controle adaptador wi-fi wifi fonte chaveada carregador universal mouse" },
-  { marca: "ALTOMEX",            modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
+  { marca: "ALTOMEX",            modelo: "Mangueira", garantia: "3 meses", tipo: "Loja", naoTesta: true },
+  { marca: "ALTOMEX",            modelo: "Demais produtos", garantia: "3 meses", tipo: "Loja" },
   { marca: "AQUARIO",            modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "ATOMO",              modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "BAOFENG",            modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
@@ -111,7 +112,8 @@ const produtos = [
   { marca: "WISME",              modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "WS BATTERY",         modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "XBALOG",             modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
-  { marca: "XCELL",              modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
+  { marca: "XCELL",              modelo: "Mangueira", garantia: "3 meses", tipo: "Loja", naoTesta: true },
+  { marca: "XCELL",              modelo: "Demais produtos", garantia: "3 meses", tipo: "Loja" },
   { marca: "XH",                 modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "XTRAD",              modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
   { marca: "YEPP",               modelo: "Todos", garantia: "3 meses", tipo: "Loja" },
@@ -195,6 +197,8 @@ const produtos = [
   { marca: "MOCHILAS",     modelo: "Todos",            garantia: "Conferência no ato da compra", tipo: "Loja", obs: "Conferir tamanho, modelo e condições da peça no ato da compra." },
   { marca: "NEXEL TINTAS", modelo: "Tintas",           garantia: "Conferência no ato da compra", tipo: "Loja", obs: "Conferir modelo, compatibilidade, cor e condições da embalagem no ato da compra." },
   { marca: "PANASONIC",    modelo: "Pilhas",           garantia: "Conferência no ato da compra", tipo: "Loja", obs: "Conferir modelo, tamanho, quantidade e integridade da embalagem no ato da compra." },
+  // alerta -> faixa vermelha "SEM GARANTIA DA LOJA · TESTAR NA COMPRA"
+  { marca: "PRODUTOS NATALINOS", modelo: "Todos", garantia: "Sem garantia da loja", tipo: "Loja", alerta: "Teste o produto (luzes, pisca-pisca, enfeites) no balcão antes de finalizar a venda.\nDepois da compra, só é aceito em caso de **defeito de fabricação**, conforme o Código de Defesa do Consumidor.", busca: "natal natalino natalinos pisca pisca-pisca arvore enfeite decoracao" },
   { marca: "SOLVENPLUS",   modelo: "Álcool",           garantia: "Conferência no ato da compra", tipo: "Loja", obs: "Conferir quantidade e integridade da embalagem no ato da compra." },
 ];
 
@@ -272,7 +276,7 @@ function badgeDe(p) {
     return { label: texto, cls: cat === "conf" ? "badge-gray" : CATEGORIAS[cat].cls };
   }
   if (cat === "fab")  return { label: g.includes("1 ano") ? "1 Ano · Fabricante" : "Fabricante", cls: "badge-blue" };
-  if (cat === "conf") return { label: g.includes("dia") ? p.garantia : "Conferir na compra", cls: "badge-gray" };
+  if (cat === "conf") return { label: g.includes("sem garantia") ? "Sem garantia da loja" : (g.includes("dia") ? p.garantia : "Conferir na compra"), cls: "badge-gray" };
   return CATEGORIAS[cat];
 }
 
@@ -404,6 +408,12 @@ function avisosDe(marca) {
 function linhasDoAviso(a) {
   if (a.indexOf("\n") === -1) return [a];
   return a.replace(/^[^:\n]{1,30}:\s*/, "").split("\n");
+}
+
+// produtos de conferência no ato ou sem garantia da loja (não têm "onde acionar")
+function semGarantiaDaLoja(p) {
+  const g = normalizar(p.garantia);
+  return g.includes("conferencia") || g.includes("sem garantia");
 }
 
 function avisoDe(marca) {
@@ -594,7 +604,7 @@ function abrirModal(i) {
   const prazoEl = document.getElementById("modalPrazo");
   const modeloEl = document.getElementById("modalModelo");
   if (umSo) {
-    const semGarantia = normalizar(base.garantia).includes("conferencia");
+    const semGarantia = semGarantiaDaLoja(base);
     const onde = semGarantia ? "Conferência no ato da compra" : (normalizar(base.tipo) === "fabricante" ? "Garantia com o fabricante" : "Garantia na loja");
     let produtos = nomeDoBloco(blocos[0]);
     if (/^todos$/i.test(produtos)) produtos = "todos os produtos";
@@ -674,6 +684,11 @@ function abrirModal(i) {
       html +=   "</div>";
     }
     if (idx === 0 && avisoHtml) html += avisoHtml;
+    if (p.alerta) {
+      // cada linha (\n) vira um parágrafo; **texto** fica em negrito
+      html += '<div class="aviso-sem-teste"><strong>SEM GARANTIA DA LOJA · TESTAR NA COMPRA</strong>' +
+        p.alerta.split("\n").map(function (l) { return "<p>" + esc(l).replace(/\*\*(.+?)\*\*/g, "<b>$1</b>") + "</p>"; }).join("") + "</div>";
+    }
     if (semTeste.length) {
       html += '<div class="aviso-sem-teste">';
       html +=   '<strong>NÃO TESTAMOS NA LOJA · ' + DIAS_TROCA_NAO_TESTADO + ' DIAS PARA TROCA</strong>';
@@ -682,7 +697,7 @@ function abrirModal(i) {
       html += "</div>";
     }
     html +=   '<dl class="det-lista">';
-    if (!normalizar(p.garantia).includes("conferencia")) {
+    if (!semGarantiaDaLoja(p)) {
       html +=   '<div><dt>Onde acionar</dt><dd><span class="tipo-badge ' + (ehLoja ? "tipo-loja" : "tipo-fabricante") + '">' + (ehLoja ? "Na loja" : "Com o fabricante") + "</span></dd></div>";
     }
     if (p.obs)      html += "<div><dt>Observação</dt><dd>" + esc(p.obs) + "</dd></div>";
@@ -708,7 +723,7 @@ function textoParaCliente(grupo) {
     const p = bloco.base;
     const nomes = nomeDoBloco(bloco);
     linhas.push("• " + nomes + ": " + textoGarantiaLegivel(p) +
-            (normalizar(p.tipo) === "fabricante" ? " (acionar com o fabricante)" : " (acionar na loja)"));
+            (semGarantiaDaLoja(p) ? "" : (normalizar(p.tipo) === "fabricante" ? " (acionar com o fabricante)" : " (acionar na loja)")));
     if (p.obs)      linhas.push("   Obs.: " + p.obs);
     if (p.contato)  linhas.push("   Contato: " + p.contato);
     if (p.endereco) linhas.push("   Endereço: " + p.endereco);
@@ -745,7 +760,7 @@ function imprimirInfo() {
     html += '<div class="imp-item">';
     html +=   '<p class="imp-produto">' + esc(nomeDoBloco(bloco)) + "</p>";
     html +=   "<p><b>Garantia:</b> " + esc(textoGarantiaLegivel(p)) + "</p>";
-    html +=   "<p><b>Onde acionar:</b> " + (ehLoja ? "Na loja" : "Com o fabricante") + "</p>";
+    if (!semGarantiaDaLoja(p)) html += "<p><b>Onde acionar:</b> " + (ehLoja ? "Na loja" : "Com o fabricante") + "</p>";
     if (p.obs)      html += "<p><b>Obs.:</b> " + esc(p.obs) + "</p>";
     if (p.contato)  html += "<p><b>Contato:</b> " + esc(p.contato) + "</p>";
     if (p.endereco) html += "<p><b>Endereço:</b> " + esc(p.endereco) + "</p>";
